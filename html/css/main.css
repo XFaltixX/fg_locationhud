@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 * {
   box-sizing: border-box;
 }
+
 body {
+  font-family: "Rajdhani", sans-serif;
   font-size: 14px;
 }
 .hud_container {
@@ -20,8 +23,8 @@ body {
   height: 42px;
   opacity: 1;
   position: relative;
-  top: 42vw;
-  left: 1vw;
+  top: 44vw;
+  left: 3vw;
   overflow: hidden;
 }
 .location_direction {
@@ -30,7 +33,7 @@ body {
   position: absolute;
   top: 1px;
   left: 40px;
-  font-family: Roboto;
+  
   font-weight: Medium;
   font-size: 22px;
   opacity: 1;
@@ -41,11 +44,12 @@ body {
   position: absolute;
   top: 20px;
   left: 88px;
-  font-family: Roboto;
+  
   font-weight: 500; /* Medium entspricht 500 */
   font-size: 16px;
   opacity: 1;
   text-align: left;
+  font-style: italic;
   
   /* Strich unter dem Text */
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
@@ -59,8 +63,8 @@ body {
   position: absolute;
   top: 23px;
   left: 39px;
-  font-family: Roboto;
-  font-weight: Regular;
+  
+  font-weight: bold;
   font-size: 16px;
   opacity: 1;
   text-align: center;
@@ -77,14 +81,16 @@ body {
   top: 6px;
   left: 1px;
   overflow: hidden;
+  rotate: 230deg;
 }
 .location_place {
   color: rgba(255,255,255,1);
   position: absolute;
   top: 2px;
   left: 88px;
-  font-family: Roboto;
-  font-weight: Italic;
+  
+  font-weight: bold;
+  font-style: italic;
   font-size: 18px;
   opacity: 1;
   text-align: left;
