@@ -61,34 +61,16 @@ end
 
 
 RegisterCommand(Config.HudMoveCommand, function()
-    exports.bulletin:Send({
-        message = 'Du kannst nun dein ~b~Location Display~s~ ~g~verschieben',
-        timeout = 5000,
-        theme = 'default'
-    })
-    Wait(500)
     SendNUIMessage({ action = "enableDrag" })
     SetNuiFocus(true, true)
 end, false)
 
 RegisterCommand(Config.HudStopMoveCommand, function()
-    exports.bulletin:Send({
-        message = 'Du hast das verschieben von dem ~b~Location Display~s~ ~r~abgebrochen',
-        timeout = 5000,
-        theme = 'default'
-    })
-    Wait(500)
     SendNUIMessage({ action = "disableDrag" })
     SetNuiFocus(false, false)
 end, false)
 
 RegisterCommand(Config.HudResetCommand, function()
-    exports.bulletin:Send({
-        message = 'Du hast dein ~b~Location Display~s~ ~g~zurückgesetzt',
-        timeout = 5000,
-        theme = 'default'
-    })
-    Wait(500)
     SendNUIMessage({ action = "resetHUD" })
 end, false)
 
